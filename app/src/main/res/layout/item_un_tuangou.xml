@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_item"
+    android:orientation="vertical">
+
+
+    <!-- 下单时间，下单人的姓名、电话、地址，菜品名称、数量、金额等-->
+
+    <TextView
+        android:id="@+id/tv_orderNumber"
+        style="@style/white14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="团购订单65621241" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            style="@style/blue22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#" />
+
+        <TextView
+            android:id="@+id/tv_data"
+            style="@style/blue22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/blue12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="下单时间：2015-06-14 17:05:03"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorGrayLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:placeholderImage="@mipmap/head_default" />
+
+        <TextView
+            android:id="@+id/tv_taocan_name"
+            style="@style/blank18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/sdv_logo"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="自助烤肉" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrayLine" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/blank14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计" />
+
+        <TextView
+            style="@style/blank14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:text="（已支付）" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/red14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥24" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrayLine" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_jiedan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unchek_text"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="15dp"
+            style="@style/blank14"
+            android:layout_marginRight="15dp"
+            android:text="接单" />
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unchek_text"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="10dp"
+            style="@style/blank14"
+            android:text="联系顾客" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

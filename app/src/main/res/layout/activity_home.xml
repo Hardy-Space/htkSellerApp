@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@color/colorMain" />
+
+    <include layout="@layout/include_title" />
+
+
+    <com.hl.hl_htk.widget.MyViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_richeng"
+            android:gravity="center"
+            android:text="@string/untreated"
+            android:textColor="@drawable/radio_text"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb2_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_contacts"
+            android:gravity="center_horizontal"
+            android:text="@string/hastreated"
+            android:textColor="@drawable/radio_text"
+            android:textSize="12dp" />
+
+
+        <RadioButton
+            android:id="@+id/rb3_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_mine"
+            android:gravity="center_horizontal"
+            android:text="@string/setting"
+            android:checked="true"
+            android:textColor="@drawable/radio_text"
+            android:textSize="12dp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

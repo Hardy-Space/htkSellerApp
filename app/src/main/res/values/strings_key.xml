@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="jpush_app_key">9009f9d77cbb9383c7aeed4e</string>
+    <string name="jpush_secret">d544418535ffcdad9b623077</string>
+
+</resources>
